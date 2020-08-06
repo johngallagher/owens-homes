@@ -1,7 +1,7 @@
 hero:
   image: /images/uploads/homepage-hero.jpg
   title: Title
-blocks
+blocks:
   block: >-
     Hello - here's a block
   
