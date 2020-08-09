@@ -1,0 +1,11 @@
+section.products
+  .container
+    h2
+      | Pages
+    .row
+      - data.pages.each do | page |
+
+        //to get the actual data:
+        = partial 'partials/pages/page', locals: {page: page[1]}
+
+

@@ -1,13 +1,39 @@
 backend:
   name: git-gateway
 
+local_backend: true
+
 media_folder: source/images/uploads
 public_folder: /images/uploads
 
 #publish_mode: editorial_workflow #optional, enables publishing workflow
 
 collections:
-  #yaml middleman data example
+  - name: pages
+    label: Page
+    format: yml
+    extension: yml
+    folder: data/pages/
+    create: true
+    slug: '{{title}}'
+    fields:
+      - {label: Title, name: title, widget: string, required: true}
+      - label: Hero
+        name: hero
+        widget: object
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+      - label: Story
+        name: story
+        widget: markdown
+      - label: Block One
+        name: block_1
+        widget: markdown
+      - label: Block Two
+        name: block_2
+        widget: markdown
+
   - name: product
     label: Product
     format: yml
@@ -24,7 +50,6 @@ collections:
       - {label: Price, name: price, widget: number}
       - {label: Body, name: body, widget: markdown}
 
-#markdown middleman blog example
   - name: blog
     label: Blog
     folder: source/posts/
@@ -38,23 +63,6 @@ collections:
       - {label: Description, name: description, widget: string}
       - {label: Image, name: image, widget: image}
       - {label: Body, name: body, widget: markdown}
-
-  - name: pages
-    label: Pages
-    files:
-      - file: "data/pages/home.yml"
-        label: Homepage
-        name: home
-        fields:
-          - label: Hero
-            name: hero
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Image, name: image, widget: image}
-          - label: Story
-            name: story
-            widget: markdown
 
   - name: settings
     label: Settings

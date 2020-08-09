@@ -1,0 +1,7 @@
+//link to product by converting the title to a slug
+.product
+  = link_to page.title.parameterize + '/'
+    .product-content
+      .title
+        h3 = page.title
+

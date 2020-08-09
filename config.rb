@@ -1,6 +1,9 @@
 #Bootstrap is used to style bits of the demo. Remove it from the config, gemfile and stylesheets to stop using bootstrap
 require "uglifier"
 
+set :layout, :landing_page_3
+page 'hmo-management/index.html', layout: :hmo_management
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -38,14 +41,21 @@ end
 # https://middlemanapp.com/advanced/dynamic-pages/
 
 # proxy product.yml files to product.html 
-data.products.each do |_filename, product|
+#data.products.each do |_filename, product|
+   #product is an array: [filename, {data}]
+  #proxy "/product/#{product[:title].parameterize}/index.html", "product.html", 
+  #locals: {product: product}, 
+  #layout: 'product-detail',
+  #ignore: true
+#end
+
+data.pages.each do |_filename, page|
   # product is an array: [filename, {data}]
-  proxy "/product/#{product[:title].parameterize}/index.html", "product.html", 
-  locals: {product: product}, 
+  proxy "/#{page[:title].parameterize}/index.html", "page.html", 
+  locals: {page: page}, 
   layout: 'product-detail',
   ignore: true
 end
-
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
