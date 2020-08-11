@@ -1,0 +1,31 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 d-flex">
+        <a href="" class="card bg-dark hover-effect justify-content-end flex-fill">
+          <img class="card-img flex-grow-1" src="assets/img/header-8.jpg" alt="A guide to building your online presence" />
+          <div class="card-img-overlay bg-dark w-100">
+            <span class="mb-0 h4 text-white"><%= section.blocks.fetch(0).title %></span>
+          </div>
+        </a> 
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="card">
+          <div class="card-body">
+            <div class="mb-3 mt-2">
+              <span class="h6"><%= section.blocks.fetch(1).title %></span>
+            </div>
+            <div class="mb-sm-5">
+              <span class="h2"><%= section.blocks.fetch(1).intro %></span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex align-items-center justify-content-between"> <a href="<%= section.blocks.fetch(1).button.url %>"><%= section.blocks.fetch(1).button.title %></a>
+              <i class="material-icons text-dark">keyboard_arrow_right</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

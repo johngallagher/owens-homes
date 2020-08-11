@@ -1,9 +1,0 @@
-hero:
-  image: /images/uploads/homepage-hero.jpg
-  title: Title
-blocks:
-  block: >-
-    Hello - here's a block
-  
-  block: >-
-    Another block - wahey

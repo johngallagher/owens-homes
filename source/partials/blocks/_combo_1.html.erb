@@ -1,0 +1,40 @@
+<section>
+  <div class="container">
+    <div class="row mb-4 text-center">
+      <div class="col">
+        <span class="h2 d-block"><%= section.title %></span>
+      </div>
+    </div>
+    <div class="row">
+      <% section.blocks[0..4].each_with_index do |block, index| %>
+        <% if index == 0 %>
+          <div class="col-lg-6 d-flex">
+            <div class="card justify-content-center p-lg-4 p-3">
+              <div class="card-body py-3 flex-grow-0">
+                <span class="d-block h2"><%= block.title %></span>
+                <p class="lead"><%= block.body %></p>
+                <a class="lead" href="<%= block.button.url %>"><%= block.button.title %></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+        <% else %>
+              <div class="col-6">
+                <a href="<%= block.button.url %>" class="card hover-effect">
+                  <img class="card-img-top" src="/assets/img/card-image-small-1.jpg" alt="Startup">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6 class="mb-0"><%= block.title %></h6>
+                      <i class="material-icons text-dark">keyboard_arrow_right</i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        <% end %>
+      <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

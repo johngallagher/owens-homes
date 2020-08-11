@@ -1,7 +1,7 @@
+local_backend: true
+
 backend:
   name: git-gateway
-
-local_backend: true
 
 media_folder: source/images/uploads
 public_folder: /images/uploads
@@ -17,23 +17,184 @@ collections:
     create: true
     slug: '{{title}}'
     fields:
-      - {label: Title, name: title, widget: string, required: true}
-      - label: Hero
-        name: hero
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Hero block
+        name: hero_block
         widget: object
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-      - label: Story
-        name: story
-        widget: markdown
-      - label: Block One
-        name: block_1
-        widget: markdown
-      - label: Block Two
-        name: block_2
-        widget: markdown
+          - label: Title
+            name: title
+            widget: string
+          - label: Intro
+            name: intro
+            widget: text
+          - label: Image
+            name: image
+            widget: image
+            required: false
+          - label: Button
+            name: button
+            widget: object
+            required: false
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: URL
+                name: url
+                widget: string
+                required: false
+          - label: Format
+            name: format
+            widget: select
+            options: [
+              "header_1",
+              "header_4",
+              "header_6",
+              "header_7",
+              "header_8",
+              "header_10",
+              "header_11",
+              "header_13",
+              "header_15"
+            ]
+      - label: Blocks
+        name: blocks
+        widget: list
+        types:
+          - label: Grid 1
+            name: grid_1
+            widget: object
+            fields:
+              - label: Components
+                name: components
+                widget: list
+                fields:
+                  - label: Link
+                    name: link
+                    widget: object
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: URL
+                        name: url
+                        widget: string
+                  - label: Image
+                    name: image
+                    widget: image
+                    required: false
+          - label: Grid 2
+            name: grid_2
+            widget: object
+            fields:
+              - label: Components
+                name: components
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Image
+                    name: image
+                    widget: image
+                    required: false
+                  - label: Intro
+                    name: intro
+                    widget: text
+                  - label: Link
+                    name: link
+                    widget: object
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: URL
+                        name: url
+                        widget: string
+          - label: Grid 10
+            name: grid_10
+            widget: object
+            fields:
+              - label: Components
+                name: components
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Intro
+                    name: intro
+                    widget: text
+                  - label: Link
+                    name: link
+                    widget: object
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: URL
+                        name: url
+                        widget: string
+          - label: Call To Action 1
+            name: call_to_action_1
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: URL
+                    name: url
+                    widget: string
+              - label: Footer
+                name: footer
+                widget: string
+          - label: Call To Action 2
+            name: call_to_action_2
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Intro
+                name: intro
+                widget: text
+              - label: Primary button
+                name: primary_button
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: URL
+                    name: url
+                    widget: string
+              - label: Secondary button
+                name: secondary_button
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: URL
+                    name: url
+                    widget: string
 
+
+
+
+        
   - name: product
     label: Product
     format: yml
@@ -48,20 +209,6 @@ collections:
 
       - {label: Weight, name: weight, widget: number}
       - {label: Price, name: price, widget: number}
-      - {label: Body, name: body, widget: markdown}
-
-  - name: blog
-    label: Blog
-    folder: source/posts/
-    extension: .html.md
-    format: frontmatter
-    create: true
-    slug: '{{title}}'
-    fields:
-      - {label: Title, name: title, widget: string, required: true}
-      - {label: Publish Date, name: date, widget: datetime}
-      - {label: Description, name: description, widget: string}
-      - {label: Image, name: image, widget: image}
       - {label: Body, name: body, widget: markdown}
 
   - name: settings

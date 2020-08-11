@@ -2,7 +2,6 @@
 require "uglifier"
 
 set :layout, :landing_page_3
-page 'hmo-management/index.html', layout: :hmo_management
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
@@ -51,9 +50,9 @@ end
 
 data.pages.each do |_filename, page|
   # product is an array: [filename, {data}]
-  proxy "/#{page[:title].parameterize}/index.html", "page.html", 
-  locals: {page: page}, 
-  layout: 'product-detail',
+  proxy "/#{page.fetch(:title).parameterize}/index.html", "page.html", 
+  locals: { page: page }, 
+  layout: :page_detail,
   ignore: true
 end
 # Helpers
@@ -70,13 +69,13 @@ helpers do
   end
   
   def nav_link(link_text, url, options = {})
-    options[:class] ||= ""
+    options[:class] ||= "nav-link h5"
     options[:class] << " active" if url == current_page.url
     link_to(link_text, url, options)
   end
 
   def markdown(content)
-     Tilt['markdown'].new { content }.render
+    Tilt['markdown'].new { content }.render
   end
 end
 

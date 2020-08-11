@@ -1,0 +1,35 @@
+title: HMO Management
+hero_block:
+  title: HMO Management
+  intro: At Owens Homes we do the hard work so you don't have to.
+  format: header_4
+  button:
+    title: Learn more
+    url: https://facebook.com
+blocks:
+  - type: grid_10
+    components:
+      - title: Benefit 1
+        intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti.
+        link:
+          title: Link
+          url: link url
+      - title: Benefit 2
+        intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti.
+        link:
+          title: New
+          url: Something
+      - title: Done for you
+        intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti.
+        link:
+          title: New
+          url: Hello
+  - type: call_to_action_1
+    title: Title
+    button:
+      title: Learn more
+      url: button url
+    footer: We make the most of this!
