@@ -52,6 +52,7 @@ collections:
             name: format
             widget: select
             options: [
+              "none",
               "header_1",
               "header_4",
               "header_6",
@@ -190,9 +191,16 @@ collections:
                   - label: URL
                     name: url
                     widget: string
-
-
-
+          - label: Form 3
+            name: form_3
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Intro
+                name: intro
+                widget: text
 
         
   - name: product
