@@ -17,36 +17,12 @@ activate :autoprefixer do |prefix|
 end
 
 activate :livereload
-# Layouts
-# https://middlemanapp.com/basics/layouts/
 
-# Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 page "/partials/*", layout: false
 page "/admin/*", layout: false
-
-activate :blog do |blog|
-  blog.permalink = "news/{year}/{title}.html"
-  blog.sources = "posts/{title}.html"
-  blog.layout = "news-detail"
-end
-
-# With alternative layout
-# page '/path/to/file.html', layout: 'other_layout'
-
-# Proxy pages
-# https://middlemanapp.com/advanced/dynamic-pages/
-
-# proxy product.yml files to product.html 
-#data.products.each do |_filename, product|
-   #product is an array: [filename, {data}]
-  #proxy "/product/#{product[:title].parameterize}/index.html", "product.html", 
-  #locals: {product: product}, 
-  #layout: 'product-detail',
-  #ignore: true
-#end
 
 data.pages.each do |_filename, page|
   # product is an array: [filename, {data}]
@@ -55,15 +31,10 @@ data.pages.each do |_filename, page|
   layout: :page_detail,
   ignore: true
 end
-# Helpers
-# Methods defined in the helpers block are available in templates
-# https://middlemanapp.com/basics/helper-methods/
 
-# pretty urls
 activate :directory_indexes
 
 helpers do
-  #helper to set background images with asset hashes in a style attribute
   def background_image(image)
     "background-image: url('" << image_path(image) << "')"
   end
@@ -94,5 +65,4 @@ configure :build do
 
   #Use asset hashes to use for caching
   #activate :asset_hash
-
 end

@@ -1,16 +1,29 @@
 title: Home
 hero_block:
   title: Owens Homes
-  intro: Come and speak to us for all your property development needs.
+  intro: For all your property development needs.
   format: header_8
   button:
-    title: Learn More
-    url: /hmo-management
+    title: Contact Us
+    url: /contact-us
 blocks:
   - type: grid_10
     components:
-      - title: Hello
-        intro: Something goes here
+      - title: HMO Management
+        intro: Managing a House of Multiple Occupancy can be time-consuming. Why not let
+          us do the hard work for you?
         link:
-          title: Hello
-          url: /hello
+          title: Contact Us
+          url: /contact-us
+      - title: Home staging
+        intro: Are you in the market to sell your home and need some assistance? Why not
+          let us do the hard work for you?
+        link:
+          title: Contact Us
+          url: /contact-us
+      - title: Property investments
+        intro: Tailored for the cash-rich, time-poor individuals wishing to invest in
+          property. Why not let us do the hard work for you?
+        link:
+          title: Contact Us
+          url: /contact-us
