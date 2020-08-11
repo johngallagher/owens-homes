@@ -7,7 +7,9 @@
       <div class="col-md-10 col-lg-9 col-xl-8 p-3">
         <h1 class="display-4 display-4"><%= block.title %></h1>
         <p class="lead"><%= block.intro %></p>
+        <% if block.button %>
         <a href="<%= block.button.url %>" class="btn btn-lg btn-primary"><%= block.button.title %></a>
+        <% end %>
       </div>
     </div>
   </div>
