@@ -1,5 +1,5 @@
 nav_items:
   - label: Home
     path: /
-  - path: /here-s-the-title
-    label: Here's the title!
+  - path: /contact-us
+    label: Contact Us
