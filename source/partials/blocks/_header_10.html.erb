@@ -1,12 +1,11 @@
-<section class="height-70">
-  <img src="images/wall_3.png" alt="Image" class="bg-image opacity-60">
+<section class="height-70 bg-dark">
+  <img src="images/wall_5.jpg" alt="Image" class="bg-image opacity-80">
   <div class="container">
     <div class="row text-center">
       <div class="col">
-        <h1 class="display-2 font-alt-1 text-white"><%= block.title %></h1>
+        <h1 class="display-2 text-white"><%= block.title %></h1>
         <span class="lead d-block mb-3 text-white"><%= block.intro %></span>
-        <a
-        href="#" class="btn btn-lg btn-primary">Get Started</a>
+        <a href="<%= block.button.url %>" class="btn btn-success btn-lg"><%= block.button.title %></a>
       </div>
     </div>
   </div>
