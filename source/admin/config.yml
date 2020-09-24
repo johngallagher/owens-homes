@@ -141,6 +141,20 @@ collections:
                       - label: URL
                         name: url
                         widget: string
+          - label: Combo 4
+            name: combo_4
+            widget: object
+            fields:
+              - label: Components
+                name: components
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Intro
+                    name: intro
+                    widget: text
           - label: Call To Action 1
             name: call_to_action_1
             widget: object

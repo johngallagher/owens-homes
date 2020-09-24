@@ -5,7 +5,9 @@
       <div class="offset-md-2 col-md-8 col-lg-7 col-xl-6">
         <h1 class="display-4" style="color: white;"><%= block.title %></h1>
         <p class="lead mb-0" style="color: white;"><%= block.intro %></p>
-        <a href="<%= block.button.url %>" class="btn btn-primary btn-lg mt-2"><%= block.button.title %></a>
+        <% if block.button.url.present? %>
+          <a href="<%= block.button.url %>" class="btn btn-primary btn-lg mt-2"><%= block.button.title %></a>
+        <% end %>
       </div>
     </div>
   </div>

@@ -1,29 +1,21 @@
 title: Help sell your home
 hero_block:
-  title: Help with selling house
-  intro: Are you struggling to sell your home?
+  title: Help with selling your home
+  intro: Are you struggling to sell your home? Even though it's beautifully presented?
   format: header_8
   button:
-    title: Contact Us
-    url: /contact-us
+    title: ""
+    url: ""
 blocks:
-  - type: grid_10
+  - type: combo_4
     components:
-      - title: HMO Management
-        intro: Managing a House of Multiple Occupancy can be time-consuming. Why not let
-          us do the hard work for you?
-        link:
-          title: Contact Us
-          url: /contact-us
-      - title: Home staging
-        intro: Are you in the market to sell your home and need some assistance? Why not
-          let us do the hard work for you?
-        link:
-          title: Contact Us
-          url: /contact-us
-      - title: Property investments
-        intro: Tailored for the cash-rich, time-poor individuals wishing to invest in
-          property. Why not let us do the hard work for you?
-        link:
-          title: Contact Us
-          url: /contact-us
+      - title: Are you struggling to sell your home?
+        intro: Even though it's well maintained and beautifully presented?
+      - title: Been on the market too long?
+        intro: _
+      - title: Considering reducing the price?
+        intro: _
+      - title: Viewings that lead nowhere?
+        intro: _
+      - title: Frustrated with the process?
+        intro: _
