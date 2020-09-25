@@ -67,6 +67,20 @@ collections:
         name: blocks
         widget: list
         types:
+          - label: Content two column
+            name: content_two_column
+            widget: object
+            fields:
+              - label: Components
+                name: components
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Intro
+                    name: intro
+                    widget: text
           - label: Grid 1
             name: grid_1
             widget: object

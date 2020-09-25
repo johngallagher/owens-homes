@@ -19,3 +19,9 @@ blocks:
         intro: _
       - title: Frustrated with the process?
         intro: _
+  - type: content_two_column
+    components:
+      - title: Left
+        intro: Left text
+      - title: Right
+        intro: Right text
