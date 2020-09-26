@@ -131,6 +131,40 @@ collections:
                       - label: URL
                         name: url
                         widget: string
+          - label: Call to action with form
+            name: call_to_action_with_form
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Call to action
+                name: call_to_action
+                widget: string
+              - label: Footer text
+                name: footer_text
+                widget: string
+                required: false
+          - label: Grid two boxes
+            name: grid_two_boxes
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Components
+                name: components
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Intro
+                    name: intro
+                    widget: markdown
+                  - label: Image name
+                    name: image_name
+                    widget: string
           - label: Grid 10
             name: grid_10
             widget: object

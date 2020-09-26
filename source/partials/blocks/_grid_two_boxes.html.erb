@@ -1,0 +1,26 @@
+<section>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col">
+        <span class="h2 display-4 d-block">Your next step...</span>
+      </div>
+    </div>
+    <div class="row">
+      <% block.components.each_with_index do |component, index| %>
+      <div class="col-12 col-md-6 d-flex">
+        <div class="card">
+          <img class="card-img-top" src="/assets/img/<%= component.image_name %>.jpg">
+          <div class="card-body py-3">
+            <span class="mb-2 d-block text-blue">Option <%= index.to_i + 1 %></span>
+            <h3><%= component.title %></h3>
+            <div class="mb-4">
+              <%= markdown(component.intro) %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+

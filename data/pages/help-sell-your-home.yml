@@ -30,3 +30,26 @@ blocks:
         intro: Left text
       - title: Right
         intro: Right text
+  - type: grid_two_boxes
+    title: Your next step...
+    components:
+      - title: Give up and do nothing
+        intro: >-
+          You could continue as you are, with viewings that lead nowhere,
+          keeping your fingers crossed.
+
+
+          Maybe a cash buyer will materialise before the market takes the predicted **severe downturn**?
+        image_name: utility-2
+      - title: Take action now!
+        intro: >-
+          Engage the services of a professional who will help you achieve the
+          price you're looking for.
+
+
+          Turn things around to attract more potential buyers, so you'll get the **sale you desire and deserve**.
+        image_name: lending-1-cropped
+  - type: call_to_action_with_form
+    title: Ready to get the sale you deserve?
+    call_to_action: Request a callback
+    footer_text: We're nice here. No high pressure sales pitch. Let's just have a chat.
