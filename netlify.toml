@@ -6,6 +6,4 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin"
     Permissions-Policy = "geolocation=(self), camera=()"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' identity.netlify.com; style-src 'self' 'sha256-8P15efpf1fbztt5zuKGtAHP4AdrdA3vWqC4lCk1ZDaI=' 'sha256-jILZY2UBo/ux6K6qGHntQonoJYNQZfxdLrszRmDpc/o=' fonts.googleapis.com; img-src 'self'; font-src 'self' fonts.gstatic.com"
-    X-Content-Security-Policy = "default-src 'self'; script-src 'self' identity.netlify.com; style-src 'self' 'sha256-8P15efpf1fbztt5zuKGtAHP4AdrdA3vWqC4lCk1ZDaI=' 'sha256-jILZY2UBo/ux6K6qGHntQonoJYNQZfxdLrszRmDpc/o=' fonts.googleapis.com; img-src 'self'; font-src 'self' fonts.gstatic.com"
-    X-WebKit-CSP = "default-src 'self'; script-src 'self' identity.netlify.com; style-src 'self' 'sha256-8P15efpf1fbztt5zuKGtAHP4AdrdA3vWqC4lCk1ZDaI=' 'sha256-jILZY2UBo/ux6K6qGHntQonoJYNQZfxdLrszRmDpc/o=' fonts.googleapis.com; img-src 'self'; font-src 'self' fonts.gstatic.com"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' identity.netlify.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self'; font-src 'self' fonts.gstatic.com"
