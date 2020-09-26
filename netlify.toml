@@ -5,7 +5,7 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin"
-    Permissions-Policy = "vibrate 'self'; usermedia *; sync-xhr 'self'"
+    Permissions-Policy = "geolocation=(self), camera=()"
     Content-Security-Policy = "default-src 'self'; script-src 'self' identity.netlify.com; style-src 'self'; img-src 'self'; font-src 'self' fonts.googleapis.com"
     X-Content-Security-Policy = "default-src 'self'; script-src 'self' identity.netlify.com; style-src 'self'; img-src 'self'; font-src 'self' fonts.googleapis.com"
     X-WebKit-CSP = "default-src 'self'; script-src 'self' identity.netlify.com; style-src 'self'; img-src 'self'; font-src 'self' fonts.googleapis.com"
