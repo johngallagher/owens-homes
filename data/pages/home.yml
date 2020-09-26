@@ -22,7 +22,8 @@ blocks:
           title: Contact Us
           url: /contact-us
       - title: Struggling to sell your home?
-        intro: Let the professionals help you get that sale you've been waiting for.
+        intro: Let the professionals help you get that sale you've been waiting for. We
+          do the hard work so you don't have to.
         link:
-          title: Help selling your home
-          url: /help-selling-your-home
+          title: Learn more
+          url: /help-sell-your-home
