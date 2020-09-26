@@ -21,9 +21,8 @@ blocks:
         link:
           title: Contact Us
           url: /contact-us
-      - title: Property investments
-        intro: Tailored for the cash-rich, time-poor individuals wishing to invest in
-          property. Why not let us do the hard work for you?
+      - title: Struggling to sell your home?
+        intro: Let the professionals help you get that sale you've been waiting for.
         link:
-          title: Contact Us
-          url: /contact-us
+          title: Help selling your home
+          url: /help-selling-your-home
