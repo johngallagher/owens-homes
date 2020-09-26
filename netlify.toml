@@ -3,3 +3,7 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' fonts.googleapis.com identity.netlify.com; style-src 'self'; img-src 'self'; font-src 'self'"
+    X-Content-Security-Policy = "default-src 'self'; script-src 'self' fonts.googleapis.com identity.netlify.com; style-src 'self'; img-src 'self'; font-src 'self'"
+    X-WebKit-CSP = "default-src 'self'; script-src 'self' fonts.googleapis.com identity.netlify.com; style-src 'self'; img-src 'self'; font-src 'self'"
+
