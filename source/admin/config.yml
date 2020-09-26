@@ -169,6 +169,10 @@ collections:
                   - label: Intro
                     name: intro
                     widget: text
+                  - label: Icon number
+                    name: icon_number
+                    required: false
+                    widget: string
           - label: Call To Action 1
             name: call_to_action_1
             widget: object

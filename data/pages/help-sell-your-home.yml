@@ -11,14 +11,19 @@ blocks:
     components:
       - title: Still on the market?
         intro: Even though it's well maintained and beautifully presented?
+        icon_number: ""
       - title: Been on the market too long?
         intro: _
+        icon_number: "51"
       - title: Considering reducing the price?
         intro: _
+        icon_number: "54"
       - title: Viewings that lead nowhere?
         intro: _
+        icon_number: "98"
       - title: Frustrated with the process?
         intro: _
+        icon_number: "97"
   - type: content_two_column
     components:
       - title: Left
