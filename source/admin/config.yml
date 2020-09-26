@@ -145,6 +145,9 @@ collections:
                   - label: Intro
                     name: intro
                     widget: text
+                  - label: Icon number
+                    name: icon_number
+                    widget: string
                   - label: Link
                     name: link
                     widget: object

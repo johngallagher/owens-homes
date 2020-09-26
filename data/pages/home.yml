@@ -9,21 +9,24 @@ hero_block:
 blocks:
   - type: grid_10
     components:
-      - title: HMO Management
-        intro: Managing a House of Multiple Occupancy can be time-consuming. Why not let
-          us do the hard work for you?
-        link:
-          title: Contact Us
-          url: /contact-us
-      - title: Home staging
-        intro: Are you in the market to sell your home and need some assistance? Why not
-          let us do the hard work for you?
-        link:
-          title: Contact Us
-          url: /contact-us
       - title: Struggling to sell your home?
         intro: Let the professionals help you get that sale you've been waiting for. We
           do the hard work so you don't have to.
         link:
           title: Learn more
           url: /help-sell-your-home
+        icon_number: "51"
+      - title: HMO Management
+        intro: Managing a House of Multiple Occupancy can be time-consuming. Why not let
+          us do the hard work for you?
+        link:
+          title: Contact Us
+          url: /contact-us
+        icon_number: "28"
+      - title: Home staging
+        intro: Are you in the market to sell your home and need some assistance? Why not
+          let us do the hard work for you?
+        link:
+          title: Contact Us
+          url: /contact-us
+        icon_number: "87"
