@@ -1,6 +1,6 @@
 title: Help sell your home
 hero_block:
-  title: Your home is on the market... still?
+  title: Are you struggling to sell your home?
   intro: We'll give you a helping hand!
   format: header_8
   button:
@@ -9,7 +9,7 @@ hero_block:
 blocks:
   - type: combo_4
     components:
-      - title: Are you struggling to sell your home?
+      - title: Still on the market?
         intro: Even though it's well maintained and beautifully presented?
       - title: Been on the market too long?
         intro: _
